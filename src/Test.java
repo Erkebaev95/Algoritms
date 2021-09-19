@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Test {
     public static void main(String[] args) {
 
+        // Поиск минимального значения
         System.out.println("\nПоиск минимального значения");
         int[] arrays = {64,45,12,55,74,92,105,22,33};
         System.out.println(Arrays.toString(arrays));
@@ -22,6 +23,7 @@ public class Test {
         int[] arr = {10, 8, 9, 2, 3, 5, 6, 4, 7, 1};
         System.out.println(Arrays.toString(arr));
 
+        // Пузырковая сортировка
         System.out.println("\nПузырковая сортировка");
         boolean isSorted = false;
         while (!isSorted) {
@@ -37,6 +39,7 @@ public class Test {
             System.out.println(Arrays.toString(arr));
         }
 
+        // Сортировка выбор
         System.out.println("\nСортировка выбор");
         for (int i = 0; i < arr.length; i++) {
             int minVal = arr[i];
@@ -53,16 +56,18 @@ public class Test {
             System.out.println(Arrays.toString(arr));
         }
 
+        // Быстрая сортировка
         System.out.println("\nБыстрая сортировка");
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
 
+        // Бинарный поиск
         System.out.println("\nБинарный поиск");
-        // ищем элемент в отсортированном массиве
-        System.out.println(binarySearch(new int[] {-1,3,5,8,10,14,16,20}, 16));
+        System.out.println(binarySearch(new int[] {-1, 3, 5, 8, 10, 14, 16, 20}, 16));
 
+        // Линейный поиск
         System.out.println("\nЛинейный поиск");
-        System.out.println(linearSearch(new int[]{89, 57, 91, 47, 95, 3, 27, 22, 67, 99}, 67));
+        System.out.println(linearSearch(new int[] {89, 57, 91, 47, 95, 3, 27, 22, 67, 99}, 67));
 
     }
 
